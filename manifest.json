@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "XKCD+",
+  "description": "Adds helpful additions to the XKCD wobsite",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+   "activeTab",
+   "storage"
+  ],
+  "content_scripts": [
+    {
+      "js": ["scripts.js"],
+      "matches": [
+        "https://xkcd.com/*"
+      ]
+    }
+  ]
+}

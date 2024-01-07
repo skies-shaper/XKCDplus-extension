@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>XKCD+ interface</title>
+        <style>
+	    .text {
+                font-family: verdana;
+                font-size: 16px;
+                width: 180px;
+                max-width: 180px;
+            }
+            checkbox {
+                display: inline;
+                height: 16px;
+            }
+            #menu {
+		width: 200px;
+            }
+            li {
+                display: inline;
+            }
+            .input {
+                width: 20px;
+                font-family: verdana;
+                font-size: 16px;
+                border-left: 2px solid black;
+            }
+            .checkbox{
+                width: 32px;
+                height: 18px;
+                background-color: white;
+                border: 1px solid black;
+                border-radius: 2px;
+            } 
+            .checkbox:hover {
+                background-color: lightgrey;
+            }
+            .circle {
+                width: 6;
+                height: 6;
+                border-radius: 50%;
+                background-color: black;
+            }
+            svg {
+                transform: translate(7px,1px) 
+            }
+	    .favbutton {
+		width: 18px;
+		height: 18px;
+		border-radius: 2px;
+		background-color: white;
+		border: 1px solid black;
+	    }
+	</style>
+    </head>
+    <body>
+        <p id="p"></p>
+        <table id="menu">
+            <tr>
+                <td class="text">
+                    Add wiki Link 
+                </td>
+                <td class="input">
+                    <button class="checkbox" id="sw1">
+                        <svg id="btn0"width="12" height="12">
+                            <circle cx="6" cy="6" r="6"  fill="black" />
+                        </svg>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="text">
+                    Show title text
+                </td>
+                <td class="input">
+                    <button class="checkbox" id="sw2">
+                        <svg id="btn1"width="12" height="12">
+                            <circle cx="6" cy="6" r="6"  fill="black" />
+                        </svg>
+                    </button>
+                </td>
+            </tr>
+	   <tr>
+                <td class="text">
+                    Favorite button
+                </td>
+                <td class="input">
+                    <button class="checkbox" id="sw3">
+                        <svg id="btn2"width="12" height="12">
+                            <circle cx="6" cy="6" r="6"  fill="black" />
+                        </svg>
+                    </button>
+                </td>
+           </tr>
+        </table>
+        <p>Search your favorites</p>
+        <script src="updates.js"></script>
+    </body>
+</html>
